@@ -1,0 +1,102 @@
+<h1>Sobre tabelas</h1>
+<h2>Informações:</h2>
+<dl><!-- Usando uma Description Lista--> 
+    <dt>Tag TABLE</dt><!-- Usando Description Term-->
+    <dd>Usado para dizer que se inicia uma tabela.</dd><!--Usando a drescription-->
+<br>
+    <dt>Tag CAPTION</dt><!-- Usando Description Term-->
+    <dd>Usando para adicionar uma descrição da tabela.</dd><!--Usando a drescription-->
+<br>
+    <dt>Tag THEAD</dt><!-- Usando Description Term-->
+    <dd>Usando para colocar as linhas e colunas dentro do cabeçalho.</dd><!--Usando a drescription-->
+<br>
+    <dt>Tag TBODY</dt><!-- Usando Description Term-->
+    <dd>Usada para indicar as linhas e colunas dentro do corpo da tabela.</dd><!--Usando a drescription-->
+<br>
+    <dt>Tag TFOOT</dt><!-- Usando Description Term-->
+    <dd>Usanda para indicar as linhas e colunas dentro do rodapé da tabela.</dd><!--Usando a drescription-->
+<br>
+    <dt>Tag TR</dt><!-- Usando Description Term-->
+    <dd>Significa Table Row, ou seja LINHA.</dd><!--Usando a drescription-->
+<br>
+    <dt>Tag TH</dt><!-- Usando Description Term-->
+    <dd>Significa Table Head, ou seja CABEÇALHO.</dd><!--Usando a drescription-->
+<br>
+    <dt>Tag TD</dt><!-- Usando Description Term-->
+    <dd>Significa Table Data, ou seja INFORMAÇÃO, ela cria uma célula na tabela.</dd><!--Usando a drescription-->
+<br>
+    <dt></dt><!-- Usando Description Term-->
+    <dd></dd><!--Usando a drescription-->
+</dl>
+
+<hr>
+<table>
+
+    <caption>Pessoas por idade</caption>
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mayk</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Diego</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td>2 Pessoas</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+<hr>
+
+<table>
+    <caption>Produzidos x Vendidos por Loja</caption>
+ 
+    <colgroup><!-- É uma tag que vai indicar e agrupar as informações e estilo de acordo com cada coluna.-->
+        <col><!-- Primeira coluna, aqui não faz nada.-->
+        <col span="2" style="background-color: red"> <!-- Segunda coluna, o atribulto SPAN="2" significa que ele tem que calcular 2 colunas.-->
+        <col span="2" style="background-color: blue;"><!-- Idem com o de cima, além ele ainda colore as tabelas.-->
+    </colgroup>
+    
+    <thead>
+        <tr>
+            <th rowspan="2"></th><!-- O atributo rowspan significa que vai o TH tem o tamanho de duas linhas (row)-->
+            <th colspan="2" scope="colgroup">Afonso Pena</th><!-- O atributo Colspan é para dizer que ele tem o tamanho de duas colunas.-->
+            <th colspan="2" scope="colgroup">Antônia Pereira</th> <!-- O atributo SCOPE, é usado para SEO (motores de busca) e indica que esse TH tem o agrupamento de colunas.-->
+        </tr>
+        <tr>
+            <th scope="col">Produzidos</th><!-- O atributo SCOPE agora esta avisando que esse TH tem agrupamento de colunas e que é o cabeçalho das colunas-->
+            <th scope="col">Vendidos</th><!--Ou seja, esta mostrando para o SEO que aqui são cabeçalhos das colunas agrupadas.-->
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th><!--Ja este escopo aqui diz que é agrupamento de linhas, ou seja, é o cabeçalho da linha, para o SEO.-->
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>

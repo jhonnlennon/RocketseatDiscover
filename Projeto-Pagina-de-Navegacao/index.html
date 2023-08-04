@@ -7,40 +7,33 @@ ok! 1 diretório de nome: files
 ok! dentro desse diretório adicione 2 imagens da sua preferência e 1 arquivo de nome images.html, que irá listar as imagens
 
 Dentro de cada arquivo .html, você deverá colocar:
-Menu de navegação com uma lista <li></li> não ordenada <ul></ul>
-título <h1></h1> da página
-Um mais parágrafos <p></p> com informações da página
+ok! Menu de navegação com uma lista <li></li> não ordenada <ul></ul>
+ok! título <h1></h1> da página
+ok! Um mais parágrafos <p></p> com informações da página
+
 A Navegação
-
-Para o menu de navegação use a tag <nav></nav> e coloque a lista não ordenada como conteúdo da tag.
-
-O conteúdo do link deverá ser o nome da página .html que existe no projeto, sendo que para cada página, iremos ter um link.
-
-Ao clicarmos no link, deveremos ser direcionados à página clicada.
+ok! Para o menu de navegação use a tag <nav></nav> e coloque a lista não ordenada como conteúdo da tag.
+ok! O conteúdo do link deverá ser o nome da página .html que existe no projeto, sendo que para cada página, iremos ter um link.
+ok! Ao clicarmos no link, deveremos ser direcionados à página clicada.
 
 Páginas imagens.html
-
 Como conteúdo desta página, além do que foi pedido, adicionar também
-
-As duas imagens que você tem na pasta;
-Use a tag p para colocar a tag img.
-obs: imagens de tamanho muito grande, poderão não se adaptar bem, mas não se preocupe com isso agora, pois logo aprenderemos a como melhorar isso.
+ok! As duas imagens que você tem na pasta;
+ok! Use a tag p para colocar a tag img.
+ok! obs: imagens de tamanho muito grande, poderão não se adaptar bem, mas não se preocupe com isso agora, pois logo aprenderemos a como melhorar isso.
 
 Página contact.html
-
 Como conteúdo desta página, além do que foi pedido, adicionar também:
+ok! Colocar suas informações de contato: email e telefone;
+ok! Cada informação deverá estar dentro de um link que quando clicado, irá abrir a respectiva informação de contato (email ou telefone)
 
-Colocar suas informações de contato: email e telefone;
-Cada informação deverá estar dentro de um link que quando clicado, irá abrir a respectiva informação de contato (email ou telefone)
 Dicas
-
 Para o conteúdo da tag <p></p>, se desejar, poderá fazer o uso do atalholorem que existe no Visual Studio Code.
 Para isso digite lorem e em seguida aperte tab.
-atenção: alguns computadores isso pode não funcionar, portanto, ão atenha a isso e continue o exercício sem essa dica.
+atenção: alguns computadores isso pode não funcionar, portanto, não atenha a isso e continue o exercício sem essa dica.
 
 Bom exercício.
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,12 +42,15 @@ Bom exercício.
     <title>Bem vindo ao projeto de navegação.</title>
 </head>
 <body>
-    <h1>Bem vindo.</h1>
-    <ul>
-        <li>Início</li>
-        <li>Contato</li>
-        <li>Veja mais..</li>
-    </ul>  
+    <h1 style="text-align: center;">Bem vindo.</h1>
+    <nav>
+        <ul>
+            <a href="index.html" title="Voltar ao início."><li>Início</li></a>
+            <a href="contact.html" title="Entre em Contato"><li>Contato</li></a>
+            <a href="files/images.html" title="Saiba mais.."><li>Veja mais..</li></a>
+        </ul>
+    </nav> 
+    <hr> 
    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores assumenda doloribus neque! Reiciendis provident eaque, doloremque cumque ab eos laudantium, maxime omnis repudiandae, dolores autem dolore numquam quam corporis voluptatibus.</p>
    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde beatae excepturi fugiat. Veniam molestiae neque labore consequuntur ex dolorum veritatis molestias totam error! Deleniti explicabo voluptatem optio commodi. A?</p>
     
