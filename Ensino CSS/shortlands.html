@@ -1,0 +1,34 @@
+<h1>Shortland</h1>
+<h2>Descrição</h2>
+É basicamente a ideia de junção de propriedades, para que fiquem de forma resumida e legível.
+
+Abaixo um exemplo de propriedades com e sem o shorthand:
+<br>
+
+{<br>
+    /* background properties */<br>
+    background-color: #000;<br>
+    background-image: url(images/bg.gif);<br>
+    background-repeat: no-repeat;<br>
+    background-position: left top;<br>
+    <br><br>
+    /* background shorthand*/<br>
+    background: #000 url(images/bg.gif) no-repeat left top;<br>
+    <br><br>
+    /* font properties */<br>
+    font-style: italic;<br>
+    font-weight: bold;<br>
+    font-size: .8em;<br>
+    line-height: 1.2;<br>
+    font-family: Arial, sans-serif;<br>
+    <br>
+    /* font shorthand */ <br>
+    font: bold italic .8em/1.2 Arial, sans-serif;<br>
+}
+Algumas das características do shorthand:<br>
+<br>
+Não irá considerar propriedades anteriores, ou seja, caso faça um shorthand, apenas ele será considerado, quaisquer propriedades anteriores serão substituídas pelas do shorthand.
+<br><br>
+Os valores que não forem especificados irão assumir o valor padrão.
+<br><br>
+Por fim, geralmente, a ordem descrita não importa, mas, caso haja muitas propriedades com valores semelhantes, poderemos encontrar problemas.

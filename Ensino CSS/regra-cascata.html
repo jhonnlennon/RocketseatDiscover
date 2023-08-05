@@ -1,0 +1,32 @@
+<h1>Regra da Cascata</h1><br>
+É um calculo matemático, onde, cada tipo e origem do estilo, possuem valores a serem considerados.
+<br><br>
+São eles: 
+<br><br>
+0. Univesal selector, combinatores e negation pseudo-class (:not())<br>
+1. Element type selector e pseudo-elements (::before, ::after)<br>
+10. Classes e attribute selectores ([type="radio"])<br>
+100. ID Selector.<br>
+1000. InLine<br>
+
+<p style="color: red;">
+    100000000000000. !important, esse carinha vai sobreescrever tudo. <br>
+    Mas não é uma boa prática de uso.</p>
+<br>
+<br>
+
+Em tese, um tem mais força e sobrepoe o outro.
+<br><br>
+
+Exemplo de busca profunda
+<style>
+    .my-title,
+    .my-title p {
+        color: aqua;
+    }
+</style>
+
+<div class="my-title">
+    Realizando uma busca profunda. <br>
+    <p>Cor que minha esposa gosta.</p>
+</div>

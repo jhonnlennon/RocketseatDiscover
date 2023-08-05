@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores e Hierarquia</title>
+</head>
+<body>
+    <h1>O que é um seletor?</h1>
+    Os seletores são o que conectam um elemento HTML com o CSS, existem vários tipos, inclusive, nós vimos um na última aula, o Element/Type selector, mas também temos o seletor global, que é um * (asterisco), ID selector, que é # (cerquilha, cardinal) e o ID do elemento HTML, class selector, que é um . (ponto) e o nome da classe, e mais alguns que podemos entender mais tarde no curso.
+
+Os seletores que mais usaremos serão realmente apenas os anteriormente citados, e vamos entrar em exemplos de como usá-los:
+
+HTML
+<div id="container" class="m-40">
+    <h1>Atenção</h1>
+    <p>Quando usamos ID e CLASS no elemento e ele estiver com css ele recebe a edição dos dois.</p>
+</div>
+Exemplo abaixo:
+<br>
+CSS
+/* ID selector */
+#container {
+	width: 200px;
+}
+
+/* Class selector */
+.m-40 {
+	margin: 40px;
+}
+
+/* Element/Type selector + Agrupamento de seletores */
+h1, h2 {
+	color: blue;
+	font-size: 60px;
+	background: gray;
+}
+<h1>Hierarquia</h1>
+<p>De forma hierarquica, quanto aos seletores:
+    In Line: Vai sempre suprimir..
+    Style e URL.
+
+    
+</p>
+</body>
+</html>
